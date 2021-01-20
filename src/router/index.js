@@ -9,6 +9,8 @@ import homeList from "../components/homeList";
 import el from "element-ui/src/locale/lang/el";
 import goodsCarter from "../components/goodsCarter";
 import paramsList from "../components/paramsList";
+import goodsList from "../components/goodsList";
+import addGoods from "../components/addGoods";
 
 
 Vue.use(Router)
@@ -29,7 +31,9 @@ const router = new Router({
         {path: '/rights',component: homeRights},
         {path: '/roles',component: homeList},
         {path:'/categories',component: goodsCarter},
-        {path:'/params',component: paramsList}
+        {path:'/params',component: paramsList},
+        {path:'/goods',component: goodsList},
+        {path:'/addGoods',component: addGoods}
       ]
     }
   ]

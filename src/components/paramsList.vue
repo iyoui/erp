@@ -263,6 +263,7 @@ export default {
           attr_vals:row.attr_vals.join(' ')
         })
       console.log(res);
+      console.log(typeof row.attr_vals);
     }
   },
     watch: {

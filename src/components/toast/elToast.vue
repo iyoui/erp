@@ -32,6 +32,7 @@
             </template>
           </el-table-column>
         </template>
+        <slot name="time"></slot>
         <slot name="setting"></slot>
       </el-table>
       <div class="block">
