@@ -152,6 +152,7 @@ export default {
           })
         })
       }
+      this.queryInfo.total = this.usersList.length
     },
     //监听每页显示条数改变
     handleSizeChange(val) {

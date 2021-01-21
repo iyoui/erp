@@ -15,7 +15,7 @@
                 border stripe :header-cell-style="{'text-align':'center'}" v-if="isDisplay">
         <slot name="otherTable"></slot>
 <!--          <el-table-column type="expand" isShow="isExpand">-->
-            <slot name="expand"></slot>
+        <slot name="expand"></slot>
 <!--          </el-table-column>-->
           <el-table-column :label="labelName" :width="50" align="center">
             <template slot-scope="scope">
@@ -32,6 +32,8 @@
             </template>
           </el-table-column>
         </template>
+        <slot name="status"></slot>
+        <slot name="send"></slot>
         <slot name="time"></slot>
         <slot name="setting"></slot>
       </el-table>

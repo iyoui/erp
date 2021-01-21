@@ -4,7 +4,6 @@
             :page-obj="queryInfo" @handleSizeChange="handleSizeChange"
             @handleCurrentChange="handleCurrentChange">
     <input-add slot="card" v-model="search" @chooseList="chooseList" @getList="getList"></input-add>
-
     <el-button type="primary"  slot="btn" style="margin-left: 2.5px" @click="turnAdd">添加商品</el-button>
     <el-table-column slot="time" label="时间" align="center" prop="add_time">
       <template slot-scope="scope">
@@ -82,7 +81,7 @@ export default {
         pagesize:5,
         pagesizes:[5,10,15],
         total:0
-      }
+      },
     }
   },
   created() {
@@ -111,6 +110,7 @@ export default {
           })
         })
       }
+      this.queryInfo.total = this.arr.length
     },
     getList(){
       this.getGoodsList()

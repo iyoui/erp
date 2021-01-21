@@ -2,7 +2,7 @@ import Vue from 'vue'
 import {Button,Form,FormItem,Input, Container, Header ,Aside, Main, Menu, Submenu,
   MenuItem, MenuItemGroup, Breadcrumb, BreadcrumbItem, Card, Option, Select, Col,
 Pagination, MessageBox, Tag, Collapse, Tree, Cascader, Alert,Tabs, TabPane,Steps,Checkbox,
-CheckboxGroup, Upload} from "element-ui";
+CheckboxGroup, Upload, RadioGroup, Radio, Timeline, TimelineItem} from "element-ui";
 // import axios from "axios";
 // import VueResource from 'vue-resource'
 // import VueAxios from "vue-axios";
@@ -39,6 +39,10 @@ Vue.use(Steps)
 Vue.use(CheckboxGroup)
 Vue.use(Checkbox)
 Vue.use(Upload)
+Vue.use(RadioGroup)
+Vue.use(Radio)
+Vue.use(TimelineItem)
+Vue.use(Timeline)
 Vue.prototype.$confirm = MessageBox.confirm
 // Vue.use(VueResource)
 // Vue.use(axios, VueAxios)

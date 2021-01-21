@@ -44,5 +44,7 @@ export default {
 </script>
 
 <style scoped>
-
+.el-input{
+  margin-bottom: 15px;
+}
 </style>
